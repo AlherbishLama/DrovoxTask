@@ -24,3 +24,11 @@ Route::get('/employees', function () {
 Route::get('/employees/{id}', function () {
     return view('employee.viewEmployee');
 });
+
+Route::get('/employees', function () {
+    return view('employee.employeesList');
+});
+
+Route::get('/employees/{id}', function () {
+    return view('employee.viewEmployee');
+});

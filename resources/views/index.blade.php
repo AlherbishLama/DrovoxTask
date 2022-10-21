@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:resources/views/index.blade.php
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -14,3 +15,9 @@
         <script src="{{asset("/js/app.js")}}"></script>
     </body>
 </html>
+========
+@extends('index')
+@section('content')
+    <welcome-component></welcome-component>
+@endsection
+>>>>>>>> development:resources/views/welcome.blade.php
