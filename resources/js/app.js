@@ -12,11 +12,13 @@ Vue.use(VueResource);
 
 import ExampleComponent from './components/ExampleComponent.vue';
 import EmployeesList from './components/employee/EmployeesList.vue';
+import ViewEmployee from "./components/employee/ViewEmployee";
 
 
 
 Vue.component('example-component', ExampleComponent);
 Vue.component('employees-list', EmployeesList);
+Vue.component('view-employee', ViewEmployee);
 
 
 const app = new Vue({el: '#app',

@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/employees', function () {
     return view('employee.employeesList');
 });
+
+Route::get('/employees/{id}', function () {
+    return view('employee.viewEmployee');
+});
