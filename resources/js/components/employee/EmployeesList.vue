@@ -6,12 +6,14 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Company</th>
+                <th>Action</th>
             </tr>
             <tr v-for="(employee, index) in employees" :key="index">
                 <td>{{ index }}</td>
                 <td>{{ employee['First_Name'] }}</td>
                 <td>{{ employee['Last_Name'] }}</td>
                 <td>{{ employee['Company'] }}</td>
+                <a :href="`/employees/${index}`"><span>view</span></a>
             </tr>
 
         </table>

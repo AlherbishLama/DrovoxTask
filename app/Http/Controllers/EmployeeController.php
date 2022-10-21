@@ -29,4 +29,20 @@ class EmployeeController extends Controller
         ];
     }
 
+
+    /**
+     * @param $id -> employee ID
+     * @return array
+     * @description Will Return a specific employee
+     */
+    #[ArrayShape(['status' => "int", 'data' => "null|string[]", 'action' => "string"])] function getEmployeeById($id): array
+    {
+        return [
+            'status' => 200,
+            'data' => $this->employees[$id] ?? null,
+            'action' => 'Get specific employee'
+        ];
+    }
+
+
 }
