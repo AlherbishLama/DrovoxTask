@@ -10,13 +10,13 @@ window.Vue = require('vue').default;
 var VueResource = require('vue-resource');
 Vue.use(VueResource);
 
-import ExampleComponent from './components/ExampleComponent.vue';
+import WelcomeComponent from './components/WelcomeComponent.vue';
 import EmployeesList from './components/employee/EmployeesList.vue';
 import ViewEmployee from "./components/employee/ViewEmployee";
 
 
 
-Vue.component('example-component', ExampleComponent);
+Vue.component('welcome-component', WelcomeComponent);
 Vue.component('employees-list', EmployeesList);
 Vue.component('view-employee', ViewEmployee);
 
